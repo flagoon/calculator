@@ -57,9 +57,11 @@ $(document).ready(function () {
 
       //value to hold main screen value that is set 2 number after point
       var screenVal = parseFloat(kalkulator.mainScreen.text()).toFixed(2);
-      //assign upper variable to main and lower screen
 
+      //assign upper variable to main and lower screen
       this.mainScreen.text(screenVal);
+
+      //replace last number with round up version
       this.lowerScreen.text(this.lowerScreen.text().replace(/[0-9]*[.]\)?[0-9]+$/, screenVal));
     },
 
