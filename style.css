@@ -1,0 +1,67 @@
+.calc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.result {
+    display: block;
+    width: 218px;
+}
+
+.result {
+    width: 100%;
+    height: 200px;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.control {
+    border: 1px solid red;
+    padding: 25px;
+    display: inline-block;
+    margin: 2px;
+    transition: all 0.3s
+}
+
+.control:hover {
+    color: white;
+    background-color: red;
+}
+
+.button {
+    border: 1px solid red;
+    padding: 25px;
+    display: inline-block;
+    margin: 2px;
+    transition: all 0.3s
+}
+
+.button:hover {
+    color: white;
+    background-color: red;
+}
+
+#sum, #equal {
+    background-color: gray;
+}
+
+.clear {
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    background: green;
+    padding: 5px;
+    text-align: center;
+}
+
+div div {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

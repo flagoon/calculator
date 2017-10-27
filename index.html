@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<div class="container calc-body row" id="screen">
+  <div class="screen col-12">
+    <p id="main-screen" class="main-screen text-right"></p>
+    <p id="lower-screen" class="lower-screen text-right"></p>
+  </div>
+  <div class="col-3">
+    <div id="CE" class="inside my-2 button text-center">CE</div>
+  </div>
+  <div class="col-3">
+    <div id="fixed" class="inside my-2 button text-center">.00</div>
+  </div>
+  <div class="col-3">
+    <div id="percent" class="inside my-2 button text-center">%</div>
+  </div>
+  <div class="col-3">
+    <div id="divide" class="inside my-2 button text-center">/</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">7</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">8</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">9</div>
+  </div>
+  <div class="col-3">
+    <div id="multi" class="inside my-2 button text-center">X</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">4</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">5</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">6</div>
+  </div>
+  <div class="col-3">
+    <div id="minus" class="inside my-2 button text-center">-</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">1</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">2</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">3</div>
+  </div>
+  <div class="col-3">
+    <div id="plus" class="inside my-2 button text-center">+</div>
+  </div>
+  <div class="col-3">
+    <div id="dot" class="inside my-2 button text-center">.</div>
+  </div>
+  <div class="col-3">
+    <div class="inside my-2 button text-center">0</div>
+  </div>
+  <div class="col-6">
+    <div id="equal" class="inside my-2 button text-center">=</div>
+  </div>
+  <div class="col-12 hide-error error" id="error"></div>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

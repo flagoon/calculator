@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Nova+Square");
+body {
+  background-color: black; }
+
+.calc-body {
+  width: 40rem;
+  margin: 5rem auto; }
+
+.screen {
+  font-family: "Nova Square", cursive;
+  font-size: 2.5rem;
+  background-color: darkgray;
+  border: 1px solid darkslategray;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: #0D414F;
+  min-height: 7rem; }
+  .screen p {
+    margin: 0;
+    padding: 0; }
+  .screen .lower-screen {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    direction: ltr;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem; }
+
+.button {
+  font-size: 3rem;
+  width: 8rem;
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .button:hover {
+    color: #efbe7c;
+    border-color: #efbe7c; }
+
+.col-6 {
+  padding: 0 0.7rem 0 0.9rem; }
+  .col-6 .button {
+    width: 100%; }
+
+.hide-error {
+  display: none;
+  color: red;
+  background-color: yellow; }
+
+.error {
+  color: white; }
+
+.clicked {
+  -webkit-animation: clicked 0.1s;
+          animation: clicked 0.1s; }
+
+@-webkit-keyframes clicked {
+  0% {
+    background-color: black; }
+  50% {
+    background-color: greenyellow; }
+  100% {
+    background-color: black; } }
+
+@keyframes clicked {
+  0% {
+    background-color: black; }
+  50% {
+    background-color: greenyellow; }
+  100% {
+    background-color: black; } }
