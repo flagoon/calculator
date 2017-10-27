@@ -47,7 +47,7 @@ $(document).ready(function () {
 
       } else {
         //when there is too many numbers on screen, error will be shown
-        kalkulator.showError('length');
+        kalkulator.showError();
       }
 
     },
@@ -57,15 +57,10 @@ $(document).ready(function () {
 
       //value to hold main screen value that is set 2 number after point
       var screenVal = parseFloat(kalkulator.mainScreen.text()).toFixed(2);
-
       //assign upper variable to main and lower screen
 
-      //****************************************************************************************
-      //lowerscreen powinien mieć zamienioną ostatnią wartość, a nie całość. replace this shit!!
-      //****************************************************************************************
-
       this.mainScreen.text(screenVal);
-      this.lowerScreen.text(screenVal);
+      this.lowerScreen.text(this.lowerScreen.text().replace(/[0-9]*[.]\)?[0-9]+$/, screenVal));
     },
 
 
@@ -178,7 +173,7 @@ $(document).ready(function () {
     },
 
     //i thought I will make more error messages but it's handled differently.
-    showError: function (errNo) {
+    showError: function () {
       $('#error').text('Za dużo znaków. Jeżeli chcesz zaokrąglić liczbę, wciśnij \".00\". Jeśli zamieniłeś kalkulator w cegłe, wciśnij \"CE\"').removeClass('hide-error');
       this.hideError();
       },
